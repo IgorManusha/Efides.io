@@ -15,7 +15,7 @@ ul {
 .hero-section__content {
 
     height: 620px;
-    background-image: url(/img/backgroundHeader.jpg);
+    background-image: url(../img/backgroundHeader.jpg);
     background-size: cover;
 }
 
