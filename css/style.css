@@ -1,0 +1,24 @@
+:root {
+    --main-green: #84B271;
+    --main-pure: #A5479A;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1920px;
+    max-height: 620px;
+}
+
+.hero-section__content {
+
+    height: 620px;
+    background-image: url(/img/backgroundHeader.jpg);
+    background-size: cover;
+}
+
+body {
+    background-color: var(--main-green);
+}
