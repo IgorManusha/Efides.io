@@ -202,6 +202,8 @@
 :root {
     --main-green: #84B271;
     --main-pure: #A5479A;
+    --main-white: white;
+    --main-black: black;
 }
 
 ul {
@@ -230,7 +232,9 @@ p {
 
 
 
-body {}
+body {
+    font-family: 'inter', sans-serif;
+}
 
 
 
@@ -271,7 +275,6 @@ body {}
 
 .header-list {
     width: 200px;
-    font-family: 'inter', sans-serif;
     font-weight: 400;
     font-size: 17px;
     display: flex;
@@ -296,8 +299,85 @@ body {}
 }
 
 .hero-section__content {
-
+    text-align: center;
+    font-size: 43px;
+    color: var(--main-white);
     height: 498px;
     background-image: url(../img/backgroundHeader.jpg);
     background-size: contain;
+    gap: 56px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 0px 0px 0px;
+}
+
+.hero-section__button {
+    font-size: 30px;
+    color: white;
+    border: none;
+    border-radius: 19px;
+    width: 328px;
+    height: 73px;
+    background-color: var(--main-green);
+}
+
+
+/* FINANCE SECTION-------------------------------------------------------------------- */
+
+.finance-section {
+    font-size: 32px;
+    text-align: center;
+    color: var(--main-green);
+    padding: 78px 0px 110px 15px;
+}
+
+
+
+.finance-section__title {
+    font-size: 20px;
+    color: var(--main-black);
+    padding: 78px 17px 0px 0px
+}
+
+.finance-section__title span {
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.finance-section__title .span-container {
+    padding: 26px 0px 43px 16px;
+}
+
+.finance-section__list {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 14px;
+}
+
+.finance-section__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--main-black);
+    border-radius: 16px;
+    width: 338px;
+    height: 175px;
+    padding: 0px 3px 6px 0px;
+    background-color: var(--main-green);
+}
+
+.finance-section__span-div {
+    padding: 0px 0px 8px 0px;
+}
+
+
+.finance-section__card span {
+    font-size: 49px;
+    font-weight: 700;
 }
