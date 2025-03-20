@@ -200,6 +200,7 @@
 
 
 :root {
+    --main-DarkSlateGray: #1B2E31;
     --main-green: #84B271;
     --main-pure: #A5479A;
     --main-white: white;
@@ -326,10 +327,11 @@ body {
 /* FINANCE SECTION-------------------------------------------------------------------- */
 
 .finance-section {
+    width: 1536px;
     font-size: 32px;
     text-align: center;
     color: var(--main-green);
-    padding: 78px 0px 110px 15px;
+    padding: 78px 0px 106px 15px;
 }
 
 
@@ -351,7 +353,9 @@ body {
 }
 
 .finance-section__list {
-    font-size: 18px;
+    padding: 0px 15px 0px 0px;
+    font-size: 17px;
+    font-weight: normal;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -380,4 +384,115 @@ body {
 .finance-section__card span {
     font-size: 49px;
     font-weight: 700;
+}
+
+
+/* EFIDES SECTION ----------------------------------------------------- */
+
+.efides-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 86px 0px 0px 0px;
+    width: 1536px;
+    height: 552px;
+    background-color: var(--main-DarkSlateGray);
+    color: var(--main-white);
+}
+
+.efides-section h2 {
+    font-size: 49px;
+    color: var(--main-green);
+}
+
+.efides-section p {
+    font-size: 21px;
+
+}
+
+.efides-section span {
+    font-size: 21px;
+
+}
+
+.efides-section__title {
+    padding: 26px 0px 0px 0px;
+}
+
+.efides-section__title p {
+    color: var(--main-green);
+    font-size: 30px;
+}
+
+
+
+.efides-section__titlefirst {
+
+    padding: 76px 0px 0px 0px;
+}
+
+
+
+/* TRADE SECTION -------------------------------------------------------- */
+
+.trade-section {
+    font-size: 30px;
+    font-weight: 100;
+    height: 432px;
+    width: 1533px;
+    display: flex;
+    padding: 79px 0px 0px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trade-section h2 {
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.trade-section span {
+    color: var(--main-green);
+    font-size: 51px;
+    font-weight: 400;
+    padding: 0px 0px 79px 0px;
+}
+
+.trade-section__button {
+    color: var(--main-white);
+    font-size: 29px;
+    border-radius: 18px;
+    border: none;
+    width: 325px;
+    height: 71px;
+    background-color: var(--main-pure);
+}
+
+/* SOLUTION SECTION ----------------------------------------------------- */
+
+.solution-section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-section__arrow {
+    display: flex;
+    flex-direction: row;
+}
+
+.solution-section__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 160px;
+}
+
+.solution-section__list--card {
+    width: 200px;
+
 }
