@@ -472,6 +472,8 @@ body {
 /* SOLUTION SECTION ----------------------------------------------------- */
 
 .solution-section {
+    width: 1536px;
+    padding: 76px 0px 0px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -479,9 +481,20 @@ body {
     align-items: center;
 }
 
+.solution-section h2 {
+    font-size: 43px;
+    font-weight: 900;
+}
+
+.solution-section h3 {
+    font-size: 28px;
+    font-weight: 900;
+}
+
 .solution-section__arrow {
+    gap: 63px;
+    padding: 16px 51px 0px 44px;
     display: flex;
-    flex-direction: row;
 }
 
 .solution-section__list {
@@ -489,10 +502,16 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 160px;
+    gap: 153px;
 }
 
 .solution-section__list--card {
     width: 200px;
 
+}
+
+.solution-section__info--title {
+    width: 1533px;
+    height: 300px;
+    background-color: var(--main-DarkSlateGray);
 }
