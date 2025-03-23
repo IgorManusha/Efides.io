@@ -196,10 +196,12 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 :root {
+    --main-litlewhite: #DDDFE0;
     --main-DarkSlateGray: #1B2E31;
     --main-green: #84B271;
     --main-pure: #A5479A;
@@ -240,3 +242,223 @@ body {
 
 
 /* HEADER SECTION */
+
+.header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1920px;
+    height: 127px;
+
+}
+
+.header-section__logo {
+    padding: 35px 0px 0px 310px;
+    max-width: 960px;
+    width: 100%;
+}
+
+.header-section__contaienr {
+    padding: 48px 311px 0px 306px;
+    justify-content: space-between;
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+}
+
+.header-section__nav {
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-section__list {
+    font-weight: 600;
+    padding: 0px 17px 0px 0px;
+    gap: 20px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* HERO SECTION ----------------------------------------------- */
+
+.hero-section {
+
+    width: 1920px;
+    height: 621px;
+    background-image: url('../img/backgroundHeader.jpg');
+
+    text-align: center;
+    color: var(--main-white);
+    font-size: 54px;
+    padding: 132px 0px 0px 0px;
+}
+
+.hero-section__button {
+    font-size: 37px;
+    color: var(--main-white);
+    width: 408.25px;
+    height: 91.11px;
+    margin-top: 67px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-green);
+}
+
+
+/* COMMODITY SECTION ------------------------------------------------*/
+
+.commodity-section {
+    padding: 97px 0px 0px 0px;
+    font-size: 40px;
+    color: var(--main-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1920px;
+    height: 790.51px;
+}
+
+.commodity-section p {
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--main-black);
+}
+
+.commodity-section h3 {
+    font-size: 63px;
+    color: var(--main-black);
+}
+
+.commodity-section span {
+    font-weight: 700;
+}
+
+.commodity-section__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 4px 50px 0px;
+
+}
+
+.commodity-section__title--last {
+    padding: 30px 0px 0px 0px;
+}
+
+.commodity-section__list {
+    justify-content: center;
+    gap: 20px;
+    display: flex;
+    width: 1300px;
+    height: 221px;
+}
+
+.commodity-section__list--item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 420px;
+    height: 221px;
+    border-radius: 20px;
+    background-color: var(--main-green);
+}
+
+.commodity-section__list--item p {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--main-black);
+}
+
+/* EFIDES SECTION ---------------------------------------------------------- */
+
+.efides-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 105px 0px 0px 0px;
+    font-size: 51px;
+    color: var(--main-green);
+    width: 1920px;
+    height: 691px;
+    background-color: var(--main-DarkSlateGray);
+}
+
+.efides-section__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+    font-weight: lighter;
+    color: var(--main-white);
+    width: 1180px;
+    height: 120px;
+    padding: 98px 0px 0px 4px;
+}
+
+.efides-section__title span {
+    font-weight: 600;
+}
+
+.efides-section__title--bold {
+    padding: 135px 0px 0px 0px;
+    font-size: 35px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.efides-section__title--span {
+
+    color: var(--main-green);
+    width: 1180px;
+    height: 126px;
+}
+
+/* TRADE SECTION ----------------------------------------*/
+
+.trade-section {
+    padding: 98px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-green);
+    font-size: 60px;
+    font-weight: bold;
+    width: 1920px;
+    height: 540px;
+    background-color: var(--main-litlewhite);
+}
+
+.trade-section h2 {
+    color: var(--main-black);
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.trade-section__button {
+    color: var(--main-white);
+    font-size: 37px;
+    margin-top: 98px;
+    border: none;
+    border-radius: 20px;
+    background-color: var(--main-pure);
+    width: 408.25px;
+    height: 91.11px;
+}
+
+/* SOLUTION SECTION ======--------------------------------------- */
+
+.solution-section {
+    width: 1920px;
+    height: 682px;
+}
