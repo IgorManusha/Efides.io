@@ -615,14 +615,34 @@ body {
     padding: 98px 0px 0px 0px;
 }
 
+.partners-section__button1 {
+    margin-top: 98px;
+    border-radius: 45px;
+    border: 3px solid var(--main-pure);
+    width: 120px;
+    height: 90px;
+    background-color: transparent;
+}
+
+.partners-section__button2 {
+    margin-top: 96px;
+    border-radius: 45px;
+    border: 3px solid var(--main-pure);
+    width: 120px;
+    height: 90px;
+    transform: rotate(180deg);
+    background-color: transparent;
+}
+
 .partners-section__title {
     display: flex;
+    gap: 150px;
 }
 
 .partners-section__list {
     gap: 20px;
 
-    padding: 95px 0px 0px 0px;
+    padding: 78px 0px 0px 0px;
     display: flex
 }
 
@@ -655,6 +675,7 @@ body {
 }
 
 .partners-section__image--list {
+    margin: 0px 19px 0px 0px;
     align-items: center;
     justify-content: space-between;
     display: flex;
@@ -672,13 +693,21 @@ body {
 
 .partners-section__image1 {}
 
-.partners-section__image2 {}
+.partners-section__image2 {
+    margin: 0px 20px 6px 0px;
+}
 
-.partners-section__image3 {}
+.partners-section__image3 {
+    margin: 4px 19px 0px 0px;
+}
 
-.partners-section__image4 {}
+.partners-section__image4 {
+    margin: 4px 12px 0px 0px;
+}
 
-.partners-section__image5 {}
+.partners-section__image5 {
+    margin: 4px 1px 0px 0px;
+}
 
 
 /* STILL SECTION ============================================----------------------------- */
@@ -734,9 +763,29 @@ body {
     font-weight: 400;
 }
 
-.curve-section__title::before {}
+.curve-section__title-container {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 80px;
+}
 
-.curve-section__title::after {}
+.curve-section__button1 {
+    border-radius: 45px;
+    border: 3px solid var(--main-pure);
+    width: 120px;
+    height: 90px;
+    background-color: transparent;
+}
+
+.curve-section__button2 {
+    border-radius: 45px;
+    border: 3px solid var(--main-pure);
+    width: 120px;
+    height: 90px;
+    transform: rotate(180deg);
+    background-color: transparent;
+}
 
 .curve-section__title span {
     font-weight: bold;
@@ -828,10 +877,11 @@ body {
 
 .footer-section__eclipse {
     padding: 81px 0px 0px 0px;
-    background-color: var(--main-DarkSlateGray);
+
+    background-color: rgb(27 46 49 / 80%);
     width: 1920px;
     height: 661.21px;
-    opacity: 80%;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
