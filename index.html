@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efides</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
-    <header class="header-section">
+    <header class="header-section" id="header-section">
         <div class="header-section__logo">
             <img src="./img/logo.png" alt="logotype company Efides">
         </div>
@@ -29,7 +31,7 @@
     <main>
         <section class="hero-section">
             <h1>Revolutionising Commodity <br> Finance Due Diligence</h1>
-            <button class="hero-section__button">Want to Know More</button>
+            <button class="hero-section__button" type="button">Want to Know More</button>
         </section>
 
         <section class="commodity-section">
@@ -80,9 +82,10 @@
                 <p>seamless integration, and more opportunities unlocked.</p>
                 <p>Trade Smarter. Finance. Faster</p>
             </div>
-            <button class="efides-section__button">
+            <a href="#header-section" class="efides-section__button">
                 <img src="./img/EfidesArrow.png" alt="errow ">
-            </button>
+            </a>
+
             <div class="efides-section__decore">
                 <img src="./img/decore-paint.png" alt="">
             </div>
@@ -91,7 +94,7 @@
         <section class="trade-section">
             <h2>Trade smarter. Finance faster. </h2>
             <span>Welcome to Efides.</span>
-            <button class="trade-section__button">Want to Know More</button>
+            <button type="button" class="trade-section__button">Want to Know More</button>
         </section>
 
         <section class="solution-section">
@@ -151,7 +154,7 @@
                 The future of commodity finance isn’t complicated. <br> It’s just faster, smarter, and better.
             </p>
             <p class="ai-section__green--italik">Welcome to Efides.</p>
-            <button class="ai-section__button">Request Exclusive Details</button>
+            <button type="button" class="ai-section__button">Request Exclusive Details</button>
             <div class="ai-section__decore">
                 <img src="./img/ai-section__decore--paint.png" alt="decore-paint">
             </div>
@@ -164,42 +167,114 @@
 
         <section class="partners-section">
             <div class="partners-section__title">
-                <button class="partners-section__button1">
+                <button class="slider-button next partners-section__button1 " type="button">
                     <img src="./img/ArrowCurve.png" alt="">
                 </button>
                 <h2>Сo-development partners</h2>
-                <button class="partners-section__button2">
+                <button class="slider-button prev partners-section__button2 " type="button">
                     <img src="./img/ArrowCurve.png" alt="">
                 </button>
             </div>
-            <ul class="partners-section__list">
-                <li class="partners-section__card">
-                    <h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna
-                        aliqua.
-                    </h3>
-                    <p><span>Lorem ipsum:</span> Lorem ipsum</p>
-                </li>
-                <li class="partners-section__card">
-                    <h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h3>
-                    <p><span>Lorem ipsum:</span> Lorem ipsum</p>
-                </li>
-                <li class="partners-section__card">
-                    <h3>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna
-                        aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </h3>
-                    <p><span>Lorem ipsum:</span> Lorem ipsum</p>
-                </li>
-            </ul>
+
+
+
+
+
+
+
+            <div class="swiper">
+                <ul class="swiper-wrapper partners-section__list ">
+                    <li class=" swiper-slide ">
+                        <div class="partners-section__card">
+                            <img width="200px" height="250px" src="./img/Вєрка_Сердючка.jpg" alt="">
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                    <li class="  swiper-slide">
+                        <div class="partners-section__card">
+                            <img width="200px" height="250px" src="./img/serduchka.png" alt="">
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                    <li class="  swiper-slide">
+                        <div class="partners-section__card">
+                            <img width="200px" height="250px" src="./img/serduchka3.png" alt="">
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+
+
+
+                    <li class="  swiper-slide">
+                        <div class="partners-section__card">
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </h3>
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+                    <li class=" swiper-slide ">
+                        <div class="partners-section__card">
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna
+                                aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            </h3>
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                    <li class=" swiper-slide ">
+                        <div class="partners-section__card">
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna
+                                aliqua.
+                            </h3>
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                    <li class=" swiper-slide ">
+                        <div class="partners-section__card">
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna
+                                aliqua.
+                            </h3>
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                    <li class=" swiper-slide ">
+                        <div class="partners-section__card">
+                            <h3>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut
+                                labore
+                                et dolore magna
+                                aliqua.
+                            </h3>
+                            <p><span>Lorem ipsum:</span> Lorem ipsum</p>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
 
             <div class="partners-section__image--list">
                 <div class="partners-section__image1">
@@ -223,14 +298,14 @@
 
         <section class="still-section">
             <h2>Still have questions?</h2>
-            <button class="still-section__button">Contact Us</button>
+            <button type="button" class="still-section__button">Contact Us</button>
         </section>
 
         <section class="curve-section">
             <h2>Stay Ahead of the Curve</h2>
 
             <div class="curve-section__title-container">
-                <button class="curve-section__button1">
+                <button class="slider-buttonCurva nextCurva curve-section__button1">
                     <img src="./img/ArrowCurve.png" alt="arrow button">
                 </button>
                 <div class="curve-section__title">
@@ -239,36 +314,71 @@
                         commodity finance. <span>Read our</span></p>
                     <p> <span>latest publications and see where the industry is heading.</span></p>
                 </div>
-                <button class="curve-section__button2">
+                <button class="slider-buttonCurva prevCurva curve-section__button2">
                     <img src="./img/ArrowCurve.png" alt="arrow button">
                 </button>
             </div>
 
-            <ul class="curve-section__list">
-                <li class="curve-section__card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
-                        dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </li>
-                <li class="curve-section__card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
-                        dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </li>
-                <li class="curve-section__card">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
-                        dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                </li>
-            </ul>
-            <ul class="curve-section__arrow">
-                <li class="curve-section__arrow--button1">Read More
-                    <img src="./img/Arrow 2.png" alt="">
-                </li>
-                <li class="curve-section__arrow--button2">Read More
-                    <img src="./img/Arrow 2.png" alt="">
-                </li>
-                <li class="curve-section__arrow--button3">Read More
-                    <img src="./img/Arrow 2.png" alt="">
-                </li>
-            </ul>
+            <div class="swiperCurva">
+                <ul class="swiper-wrapper curve-section__list">
+
+                    <li class="swiper-slide">
+                        <div class="curve-section__card">
+                            <video controls width="340px" height="150px" src="./video/VID_20250405_085028.mp4"></video>
+                        </div>
+                        <div class="curve-section__arrow--button1">Read More
+                            <img src="./img/Arrow 2.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="curve-section__card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
+                                dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            </p>
+                        </div>
+                        <div class="curve-section__arrow--button1">Read More
+                            <img src="./img/Arrow 2.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="curve-section__card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
+                                dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            </p>
+                        </div>
+                        <div class="curve-section__arrow--button1">Read More
+                            <img src="./img/Arrow 2.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="curve-section__card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
+                                dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            </p>
+                        </div>
+                        <div class="curve-section__arrow--button1">Read More
+                            <img src="./img/Arrow 2.png" alt="">
+                        </div>
+                    </li>
+
+                    <li class="swiper-slide">
+                        <div class="curve-section__card">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed adipiscing elit.Lorem ipsum
+                                dolconsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                            </p>
+                        </div>
+                        <div class="curve-section__arrow--button1">Read More
+                            <img src="./img/Arrow 2.png" alt="">
+                        </div>
+                    </li>
+
+
+                </ul>
+            </div>
+
         </section>
     </main>
     <footer class="footer-section">
@@ -303,13 +413,64 @@
             <div class="footer-section__info">
                 <h2>Have any questions?</h2>
                 <span>Write to us!</span>
-                <button class="footer-section__button">Want to Know More</button>
+                <button type="button" class="footer-section__button">Want to Know More</button>
             </div>
 
 
 
         </div>
     </footer>
+
+
+    <div class="backdrop backdrop-hidden">
+        <div class="modal">
+
+            <div class="modal-title">
+                <img class="modal-title__logo" src="./img/Mask group.png" alt="logotype Efides">
+                <p>Please enter your</p>
+                <p>details below, and</p>
+                <p>we’ll gladly share</p>
+                <p>more information</p>
+                <p>with you.</p>
+            </div>
+
+
+            <form class="modal-form">
+                <img class="modal-form__close" src="./img/close.svg" alt="">
+                <div class="modal-form__name--container">
+                    <input class="modal-padding" type="text" placeholder="First name">
+                    <input class="modal-padding" type="text" placeholder="Last name">
+                </div>
+                <input class="modal-padding" type="email" placeholder="Email">
+                <input class="modal-padding" type="tel" placeholder="Phone number">
+
+                <select class="modal-padding" name="select">
+                    <option>I am interested as : </option>
+                    <option value="value1">Investor</option>
+                    <option value="value2">Traider</option>
+                    <option value="value3">Bank</option>
+                </select>
+
+                <textarea class="modal-textarea modal-padding"
+                    placeholder="Your message. Let us know if you have any specific questions"></textarea>
+
+                <button class="modal-form__button" type="submit">Submit</button>
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/trade.js"></script>
+    <script src="./js/ai.js"></script>
+    <script src="./js/footer.js"></script>
+    <script src="./js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+    <script src="/js/curvaSlider.js"></script>
+
 </body>
 
 </html>

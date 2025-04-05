@@ -201,6 +201,7 @@
 
 
 :root {
+    --main-gray: #C3C3C3;
     --main-blue: #5AC4F7;
     --main-litlewhite: #DDDFE0;
     --main-DarkSlateGray: #1B2E31;
@@ -208,6 +209,10 @@
     --main-pure: #A5479A;
     --main-white: white;
     --main-black: black;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -427,6 +432,9 @@ body {
 }
 
 .efides-section__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 310px;
     bottom: 62px;
@@ -594,6 +602,7 @@ body {
     width: 531px;
     height: 91px;
     background-color: var(--main-blue);
+    z-index: 2;
 }
 
 .ai-section__decore {
@@ -640,10 +649,14 @@ body {
     align-items: center;
 }
 
+
+
 .partners-section h2 {
     font-size: 60px;
     padding: 98px 0px 0px 0px;
 }
+
+
 
 .partners-section__button1 {
     margin-top: 98px;
@@ -670,8 +683,6 @@ body {
 }
 
 .partners-section__list {
-    gap: 20px;
-
     padding: 78px 0px 0px 0px;
     display: flex
 }
@@ -686,6 +697,10 @@ body {
     border-radius: 20px;
     border: none;
     padding: 45px 42px 41px 42px
+}
+
+.partners-section__card img {
+    margin: 0px 0px 0px 60px;
 }
 
 .partners-section__card h3 {
@@ -740,6 +755,10 @@ body {
 }
 
 
+.partners-section__overflow {
+    overflow: hidden;
+}
+
 /* STILL SECTION ============================================----------------------------- */
 
 .still-section {
@@ -780,6 +799,9 @@ body {
     padding: 97px 0px 0px 0px;
 }
 
+.curve-section .swiper-slide {
+    height: 300px;
+}
 
 
 .curve-section h2 {
@@ -825,7 +847,7 @@ body {
 .curve-section__list {
     margin-top: 80px;
     display: flex;
-    gap: 20px;
+
     width: 1300px;
     height: 206px;
 }
@@ -850,10 +872,9 @@ body {
 }
 
 .curve-section__arrow--button1 {
-    padding: 0px 0px 0px 278px;
+    padding: 20px 0px 0px 290px;
     font-size: 20px;
     font-weight: 800;
-    width: 34%;
     height: 24px;
 }
 
@@ -947,4 +968,141 @@ body {
     font-size: 37px;
     font-weight: 400;
     color: var(--main-white);
+}
+
+
+/* MODAL SECTION */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.backdrop-hidden {
+    display: none;
+}
+
+.modal {
+    border-radius: 26px;
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    height: 600px;
+    background-color: #fff;
+}
+
+.modal-padding {
+    font-size: 16px;
+    padding: 0px 0px 0px 16px;
+}
+
+.modal input {
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--main-gray);
+}
+
+.modal-title {
+    border-radius: 24px 0px 0px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    font-size: 36px;
+    font-weight: bold;
+    padding: 0px 0px 0px 75px;
+    color: var(--main-white);
+    width: 500px;
+    height: 600px;
+    background-color: var(--main-green);
+}
+
+.modal-title__logo {
+    width: 140px;
+    height: 40px;
+    margin: 0px 0px 28px 0px;
+}
+
+.modal-form {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 20px;
+    width: 500px;
+    height: 600px;
+}
+
+.modal-form__close {
+    height: 25px;
+    padding: 0px 0px 5px 300px;
+}
+
+.modal-form__name--container {}
+
+.modal-form__name--container input {
+    width: 162px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--main-gray);
+}
+
+.modal-form select {
+    width: 330px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--main-gray);
+}
+
+.modal-form textarea {
+    resize: none;
+    width: 330px;
+    height: 80px;
+    border-radius: 8px;
+    border: 2px solid var(--main-gray);
+}
+
+.modal-textarea {
+    padding: 12px 0px 0px 22px;
+}
+
+.modal-form__button {
+    margin-top: 16px;
+    width: 330px;
+    height: 52px;
+    background-color: var(--main-green);
+    border-radius: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--main-white);
+}
+
+
+
+
+/* SWIPER  ====================== */
+
+
+
+.swiper {
+    width: 1300px;
+}
+
+.swiper-slide {
+    margin: 0px;
+}
+
+.swiperCurva {
+    width: 1300px;
+    overflow: hidden;
 }
