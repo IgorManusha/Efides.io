@@ -1145,7 +1145,7 @@ body {
     align-items: center;
 }
 
-.form-message h1 {
+.form-message h2 {
     padding: 28px 0px 28px 0px;
     font-style: italic;
     font-weight: 700;
@@ -1181,7 +1181,7 @@ body {
     align-items: center;
 }
 
-.form-messageSecond h1 {
+.form-messageSecond h2 {
     padding: 28px 0px 28px 0px;
     font-style: italic;
     font-weight: 700;
