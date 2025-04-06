@@ -852,6 +852,13 @@ body {
     height: 206px;
 }
 
+.curve-section__list li {
+
+    width: 420px;
+    margin-right: 20px;
+}
+
+
 .curve-section__card {
     font-size: 20px;
     text-align: left;
@@ -1105,4 +1112,21 @@ body {
 .swiperCurva {
     width: 1300px;
     overflow: hidden;
+}
+
+/* FORM MESSAGE ====================================== */
+
+.form-message__container {
+    width: 1920px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-message {
+    width: 1000px;
+    height: 600px;
+    background-color: var(--main-green);
 }
