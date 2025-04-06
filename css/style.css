@@ -701,7 +701,10 @@ body {
 
 .partners-section__card img {
     margin: 0px 0px 0px 60px;
+    width: 180px;
+    height: 230px;
 }
+
 
 .partners-section__card h3 {
     font-style: normal;
@@ -736,7 +739,7 @@ body {
     height: 100px;
 }
 
-.partners-section__image1 {}
+
 
 .partners-section__image2 {
     margin: 0px 20px 6px 0px;
@@ -871,6 +874,7 @@ body {
 
 }
 
+
 .curve-section__arrow {
     margin-top: 20px;
     display: flex;
@@ -922,12 +926,6 @@ body {
     font-weight: 300;
 }
 
-.footer-section h3 {
-    font-size: 24px;
-    font-weight: 800;
-    color: var(--main-white);
-    margin-bottom: 30px;
-}
 
 .footer-section a {
     font-size: 20px;
@@ -959,10 +957,17 @@ body {
     gap: 80px;
 }
 
-.footer-section__address__item {
+.footer-section__address--item {
     font-size: 21px;
     display: flex;
     flex-direction: column;
+}
+
+.footer-section__address--item p {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--main-white);
+    margin-bottom: 30px;
 }
 
 .footer-section__button {
@@ -1114,19 +1119,72 @@ body {
     overflow: hidden;
 }
 
-/* FORM MESSAGE ====================================== */
+/* FORM MESSAGE FIRST ====================================== */
 
 .form-message__container {
-    width: 1920px;
-    height: 800px;
-    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
     justify-content: center;
     align-items: center;
-
+    z-index: 3;
 }
 
 .form-message {
+    color: var(--main-white);
     width: 1000px;
     height: 600px;
     background-color: var(--main-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-message h1 {
+    padding: 28px 0px 28px 0px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+/* FORM MESSAGE CONTAINER SECOND */
+
+.form-message__containerSecond {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.form-messageSecond {
+    border-radius: 24px;
+    color: var(--main-white);
+    width: 1000px;
+    height: 600px;
+    background-color: var(--main-green);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-messageSecond h1 {
+    padding: 28px 0px 28px 0px;
+    font-style: italic;
+    font-weight: 700;
+    text-align: center;
+    font-size: 45px;
 }

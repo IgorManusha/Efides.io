@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efides</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
 </head>
 
@@ -143,7 +143,7 @@
             </ul>
         </section>
 
-        <section class="ai-section">
+        <div class="ai-section">
             <p>
                 With <span>AI-driven automation</span>, Efides makes due diligence effortless—cutting costs, reducing
             </p>
@@ -158,7 +158,7 @@
             <div class="ai-section__decore">
                 <img src="./img/ai-section__decore--paint.png" alt="decore-paint">
             </div>
-        </section>
+        </div>
 
         <section class="join-section">
             <h2 class="join-section__first">Join Us to Bring Digital Trust </h2>
@@ -186,21 +186,22 @@
                 <ul class="swiper-wrapper partners-section__list ">
                     <li class=" swiper-slide ">
                         <div class="partners-section__card">
-                            <img width="200px" height="250px" src="./img/Вєрка_Сердючка.jpg" alt="">
+                            <img class="partners-section__card--img" src="./img/Вєрка_Сердючка.jpg"
+                                alt="photo serduchki">
                             <p><span>Lorem ipsum:</span> Lorem ipsum</p>
                         </div>
                     </li>
 
                     <li class="  swiper-slide">
                         <div class="partners-section__card">
-                            <img width="200px" height="250px" src="./img/serduchka.png" alt="">
+                            <img class="partners-section__card--img" src="./img/serduchka.png" alt="photo serduchki">
                             <p><span>Lorem ipsum:</span> Lorem ipsum</p>
                         </div>
                     </li>
 
                     <li class="  swiper-slide">
                         <div class="partners-section__card">
-                            <img width="200px" height="250px" src="./img/serduchka3.png" alt="">
+                            <img class="partners-section__card--img" src="./img/serduchka3.png" alt="photo serduchki">
                             <p><span>Lorem ipsum:</span> Lorem ipsum</p>
                         </div>
                     </li>
@@ -324,10 +325,11 @@
 
                     <li class="swiper-slide">
                         <div class="curve-section__card">
-                            <video controls width="340px" height="150px" src="./video/VID_20250405_085028.mp4"></video>
+                            <video controls style="width: 345px; height: 150px;"
+                                src="./video/VID_20250405_085028.mp4"></video>
                         </div>
                         <div class="curve-section__arrow--button1">Read More
-                            <img src="./img/Arrow 2.png" alt="">
+                            <img src="./img/Arrow2.png" alt="arrow button">
                         </div>
                     </li>
 
@@ -338,7 +340,7 @@
                             </p>
                         </div>
                         <div class="curve-section__arrow--button1">Read More
-                            <img src="./img/Arrow 2.png" alt="">
+                            <img src="./img/Arrow2.png" alt="arrow button">
                         </div>
                     </li>
 
@@ -349,7 +351,7 @@
                             </p>
                         </div>
                         <div class="curve-section__arrow--button1">Read More
-                            <img src="./img/Arrow 2.png" alt="">
+                            <img src="./img/Arrow2.png" alt="arrow button">
                         </div>
                     </li>
 
@@ -360,7 +362,7 @@
                             </p>
                         </div>
                         <div class="curve-section__arrow--button1">Read More
-                            <img src="./img/Arrow 2.png" alt="">
+                            <img src="./img/Arrow2.png" alt="arrow button">
                         </div>
                     </li>
 
@@ -371,7 +373,7 @@
                             </p>
                         </div>
                         <div class="curve-section__arrow--button1">Read More
-                            <img src="./img/Arrow 2.png" alt="">
+                            <img src="./img/Arrow2.png" alt="arrow button">
                         </div>
                     </li>
 
@@ -381,6 +383,7 @@
 
         </section>
     </main>
+
     <footer class="footer-section">
         <div class="footer-section__eclipse">
 
@@ -390,13 +393,13 @@
 
                 <address>
                     <ul class="footer-section__address">
-                        <li class="footer-section__address__item">
-                            <h3>Contact Information:</h3>
+                        <li class="footer-section__address--item">
+                            <p>Contact Information:</p>
                             <a href="mailto:info@efides.com">Email:info@efides.com</a>
-                            <a href="tel:+41 XX XXX XX XX">Phone: +41 XX XXX XX XX</a>
+                            <a href="tel:#">Phone: +41 XX XXX XX XX</a>
                         </li>
-                        <li class="footer-section__address__item">
-                            <h3>Office Address:</h3>
+                        <li class="footer-section__address--item">
+                            <p>Office Address:</p>
                             <a href="https://maps.app.goo.gl/UdhF7yW3cAgY1xia8" target="_blank">
                                 Bubental 47, 8852 Altendorf <br>
                                 Switzerland</a>
@@ -426,7 +429,7 @@
         <div class="modal">
 
             <div class="modal-title">
-                <img class="modal-title__logo" src="./img/Mask group.png" alt="logotype Efides">
+                <img class="modal-title__logo" src="./img/Maskgroup.png" alt="logotype Efides">
                 <p>Please enter your</p>
                 <p>details below, and</p>
                 <p>we’ll gladly share</p>
@@ -438,14 +441,17 @@
             <form class="modal-form">
                 <img class="modal-form__close" src="./img/close.svg" alt="">
                 <div class="modal-form__name--container">
-                    <input class="modal-padding" type="text" placeholder="First name">
-                    <input class="modal-padding" type="text" placeholder="Last name">
+                    <input class="modal-padding" type="text" placeholder="First name" required>
+                    <input class="modal-padding" type="text" placeholder="Last name" required>
                 </div>
-                <input class="modal-padding" type="email" placeholder="Email">
-                <input class="modal-padding" type="tel" placeholder="Phone number">
+                <input class="modal-padding" type="email" placeholder="Email" required>
+                <input class="modal-padding" type="tel" placeholder="Phone number" required pattern="^\+[0-9]{12}">
 
-                <select class="modal-padding" name="select">
-                    <option>I am interested as : </option>
+
+
+
+                <select class="modal-padding" name="select" required>
+                    <option value="">I am interested as : </option>
                     <option value="value1">Investor</option>
                     <option value="value2">Traider</option>
                     <option value="value3">Bank</option>
@@ -463,7 +469,21 @@
     </div>
 
     <div class="form-message__container">
-        <div class="form-message"></div>
+        <div class="form-message">
+            <img style="width: 80px;" src="./img/Group18.png" alt="check mark">
+            <h1>Thank you! Your message <br> was sent successfully</h1>
+            <p>We appreciate your interest and will be happy</p>
+            <p> to share more information with you soon.</p>
+        </div>
+    </div>
+
+    <div class="form-message__containerSecond">
+        <div class="form-messageSecond">
+            <img style="width: 80px;" src="./img/Group18.png" alt="check mark">
+            <h1>Your message sent <br> successfully!</h1>
+            <p>Thank you! We’ve received your request and will </p>
+            <p> get back to you shortly with more details!</p>
+        </div>
     </div>
 
     <script src="./js/modal.js"></script>
