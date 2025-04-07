@@ -321,8 +321,7 @@
 
                     <li class="swiper-slide">
                         <div class="curve-section__card">
-                            <video autoplay src="./video/veraS.mp4" controls
-                                style="width: 345px; height: 150px;"></video>
+                            <video src="./video/veraS.mp4" controls style="width: 345px; height: 150px;"></video>
 
                         </div>
                         <div class="curve-section__arrow--button1">Read More
@@ -436,16 +435,16 @@
             <form class="modal-form">
                 <img class="modal-form__close" src="./img/close.svg" alt="">
                 <div class="modal-form__name--container">
-                    <input class="modal-padding" type="text" placeholder="First name" required>
-                    <input class="modal-padding" type="text" placeholder="Last name" required>
+                    <input disabled class="modal-padding" type="text" placeholder="First name" required>
+                    <input disabled class="modal-padding" type="text" placeholder="Last name" required>
                 </div>
-                <input class="modal-padding" type="email" placeholder="Email" required>
-                <input class="modal-padding" type="tel" placeholder="Phone number" required>
+                <input disabled class="modal-padding" type="email" placeholder="Email" required>
+                <input disabled class="modal-padding" type="tel" placeholder="Phone number" required>
 
 
 
 
-                <select class="modal-padding" name="select" required>
+                <select disabled class="modal-padding" name="select" required>
                     <option value="">I am interested as : </option>
                     <option value="value1">Investor</option>
                     <option value="value2">Traider</option>
@@ -495,6 +494,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/formats-slider.js"></script>
     <script src="./js/curvaSlider.js"></script>
+    <script src="./js/message.js"></script>
 
 
 </body>

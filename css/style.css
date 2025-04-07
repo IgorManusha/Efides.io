@@ -1161,6 +1161,10 @@ body {
     z-index: 3;
 }
 
+.form-message__container--show {
+    display: flex;
+}
+
 .form-message {
     color: var(--main-white);
     width: 1000px;
@@ -1170,6 +1174,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 24px;
 }
 
 .form-message h2 {
@@ -1216,34 +1221,4 @@ body {
     font-size: 45px;
 }
 
-/* SCROLL BUTTON UP  ==================================  */
-.con {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-}
-
-.buka {
-    width: 100px;
-    height: 100px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: slide-in 2s infinite;
-
-}
-
-@keyframes slide-in {
-
-    0%,
-    100% {
-        transform: translateY(0%);
-    }
-
-    50% {
-        transform: translateY(-1px);
-    }
-
-}
+/* MESSAGE SUCCESSFULLY  ==================================  */
