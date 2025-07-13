@@ -749,13 +749,34 @@ body {
     font-weight: bold;
 }
 
+.partners-section__image--containerList {
+    width: 800px;
+    height: auto;
+    width: 1286px;
+    height: auto;
+    overflow: hidden;
+}
+
 .partners-section__image--list {
     margin: 0px 19px 0px 0px;
     align-items: center;
     justify-content: space-between;
     display: flex;
-    width: 1320px;
+
     padding: 100px 0px 0px 0px;
+
+    animation-name: moveSlideshow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+
+
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .partners-section__image {
@@ -786,7 +807,7 @@ body {
 
 
 .partners-section__overflow {
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* STILL SECTION ============================================----------------------------- */
@@ -1135,7 +1156,20 @@ body {
 
 .swiper {
     width: 1300px;
+    /* animation-name: moveSlideshow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    overflow: visible; */
+
+
+    /* display: flex;
+    width: max-content;
+    min-width: 200%;
+    flex-shrink: 0; */
 }
+
+
 
 .swiper-slide {
     margin: 0px;
@@ -1143,7 +1177,7 @@ body {
 
 .swiperCurva {
     width: 1300px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* FORM MESSAGE FIRST ====================================== */
@@ -1221,4 +1255,27 @@ body {
     font-size: 45px;
 }
 
-/* MESSAGE SUCCESSFULLY  ==================================  */
+/* GRADIENT ==================================  */
+
+.gradientContainer {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradientDiv {
+    position: absolute;
+    text-align: center;
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+}
+
+.gradientOpacity {
+    height: 150px;
+    position: relative;
+}
+
+/* ////////////////////////////////////////////////////////// */
